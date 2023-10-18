@@ -58,20 +58,20 @@ const Calculator = () => {
   };
 
   useEffect(() => {
-    localStorage.setItem("calculatorHistory", JSON.stringify(history));
-  }, [history]);
-
-  useEffect(() => {
     const savedHistory = localStorage.getItem("calculatorHistory");
     if (savedHistory) {
       setHistory(JSON.parse(savedHistory));
     }
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem("calculatorHistory", JSON.stringify(history));
+  }, [history]);
+
   return (
-    <div class="container">
-      <div class="col">
-      <GiHamburgerMenu className="GiHamburgerMenu"  />
+    <div className="container">
+      <div className="col">
+        <GiHamburgerMenu className="GiHamburgerMenu" />
         <div className="screen">
           <div className={`output ${input === "0" ? "placeholder" : ""}`}>
             {input}
