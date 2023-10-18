@@ -1,0 +1,158 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  background-color: green;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+.col {
+  flex: 2;
+}
+.history-panel {
+  flex: 1;
+}
+.calculator {
+  width: 300px;
+  flex: 1;
+  padding: 20px;
+
+  background-color: transparent;
+  border-radius: 10px;
+
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.screen {
+  background-color: transparent;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  font-size: 24px;
+
+  padding: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+
+  border: 1px solid #ccc;
+
+  padding: 0;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.GiHamburgerMenu {
+  font-size: 24px;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.history-panel {
+  flex: 1;
+  display: none;
+  background-color: transparent;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #ccc;
+
+  height: 110vh;
+}
+
+.history-title {
+  font-size: 18px;
+  color: black;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  text-align: right;
+}
+
+.history-item {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.clear-history-button {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.Button.text-color {
+  background-color: white;
+}
+.Button {
+  background: #cad2c5;
+
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  height: 10vh;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+
+  min-width: 25%;
+}
+
+.Button[data-size="2"] {
+  height: 40%;
+}
+
+.Button[data-value="null"] {
+  pointer-events: none;
+}
+
+.Button:hover {
+  background: #d7ddd3;
+  cursor: default;
+}
+.calculator-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.show-history .history-panel {
+  display: block;
+}

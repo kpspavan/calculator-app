@@ -1,0 +1,13 @@
+.tabs{
+    display: flex;
+}
+.tab.active {
+    border-bottom: 2px solid blue;
+  }
+.tab.memory{
+    margin-left: 10px;
+}
+
+.MdOutlineDeleteForever {
+    font-size: 24px;
+  }
